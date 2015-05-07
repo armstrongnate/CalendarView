@@ -25,10 +25,10 @@ pod "CalendarView"
 
 ## Screenshot
 
-<img src="./screens/demo.gif" width="400px" />
+<img src="./screens/demo.gif" width="350px" />
 &nbsp;
 &nbsp;
-<img src="./screens/screenshot.png" width="400px" />
+<img src="./screens/screenshot.png" width="350px" />
 
 ## Usage
 
