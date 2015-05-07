@@ -7,9 +7,12 @@
 
 ## Usage
 
-To run the example project, clone the repo, and run `pod install` from the Example directory first.
+To run the example project, clone the repo, and run `pod install` from the CalendarViewDemo directory first.
 
 ## Requirements
+
+* iOS 8.3+
+* Xcode 6.3
 
 ## Installation
 
@@ -19,6 +22,102 @@ it, simply add the following line to your Podfile:
 ```ruby
 pod "CalendarView"
 ```
+
+## Screenshot
+
+<img src="./screens/demo.gif" width="350px" />
+<img src="./screens/screenshot.png" height="350px" />
+
+## Usage
+
+Use the `CalendarView` class in code:
+
+```swift
+let calendar = CalendarView(frame: CGRectMake(0, 0, CGRectGetWidth(view), 320))
+view.addSubview(calendar)
+```
+
+or as an outlet (supports auto layout)
+
+```swift
+@IBOutlet weak var calendar: CalendarView!
+```
+
+### Delegate
+
+A `CalendarView`'s `delegate` is notified of two events:
+
+```swift
+calendarDidSelectDate(date: Moment) // called when user taps a date
+calendarDidPageToDate(date: Moment) // called when users swipes month
+```
+
+The `CalendarView` class uses [SwiftMoment](https://github.com/akosma/SwiftMoment)
+for date manipulation.
+
+#### Example use of delegate calls
+
+```swift
+extension ViewController: CalendarViewDelegate {
+
+  func calendarDidSelectDate(date: Moment) {
+    title = date.format(dateFormat: "MMMM d, yyyy")
+  }
+
+  func calendarDidPageToDate(date: Moment) {
+    title = date.format(dateFormat: "MMMM d, yyyy")
+  }
+
+}
+```
+
+### Customizations
+
+The aim is to allow the calendar to be as customizable as possible without making
+it overly complex and bloated.
+
+#### Appearance
+
+You can customize the look of the calendar by setting certain class properties of
+`CalendarView`.
+
+```swift
+import UIKit
+import CalendarView
+
+@UIApplicationMain
+class AppDelegate: UIResponder, UIApplicationDelegate {
+
+  var window: UIWindow?
+
+
+  func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
+    // Calendar appearance
+    CalendarView.daySelectedBackgroundColor = UIColor.secondaryColor()
+    CalendarView.daySelectedTextColor = UIColor.whiteColor()
+    CalendarView.todayBackgroundColor = UIColor(white: 0.0, alpha: 0.3)
+    CalendarView.todayTextColor = UIColor.whiteColor()
+    CalendarView.otherMonthBackgroundColor = UIColor.clearColor()
+    CalendarView.otherMonthTextColor = UIColor(white: 1.0, alpha: 0.3)
+    CalendarView.dayTextColor = UIColor(white: 1.0, alpha: 0.6)
+    CalendarView.dayBackgroundColor = UIColor.clearColor()
+
+    return true
+  }
+}
+```
+
+#### Selected date on swipe
+
+By default the first day of the month is automatically selected when the user swipes
+to a different month. You can customize this behavior by modifying the `selectedDayOnPaged`
+property of your `CalendarView` instance:
+
+```swift
+public var selectedDayOnPaged: Int? = 1
+```
+
+If set to `nil`, no day will be automatically selected on swipe.
 
 ## Author
 
