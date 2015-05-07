@@ -19,7 +19,7 @@ Pod::Spec.new do |s|
                        * Customization
                        DESC
   s.homepage         = "https://github.com/n8armstrong/CalendarView"
-  # s.screenshots     = "www.example.com/screenshots_1", "www.example.com/screenshots_2"
+  s.screenshots     = "https://raw.githubusercontent.com/n8armstrong/CalendarView/master/screens/screenshot.png"
   s.license          = 'MIT'
   s.author           = { "Nate Armstrong" => "natearmstrong2@gmail.com" }
   s.source           = { :git => "https://github.com/n8armstrong/CalendarView.git", :tag => s.version.to_s }
