@@ -112,7 +112,7 @@ public class CalendarView: UIView {
     }
   }
 
-  func selectDate(date: Moment) {
+  public func selectDate(date: Moment) {
     contentView.selectDate(date)
   }
 
