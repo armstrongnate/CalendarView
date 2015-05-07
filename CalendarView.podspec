@@ -9,7 +9,7 @@
 
 Pod::Spec.new do |s|
   s.name             = "CalendarView"
-  s.version          = "1.0.1"
+  s.version          = "1.0.2"
   s.summary          = "A lightweight calendar view."
   s.description      = <<-DESC
                        A calendar view with a focus on:
@@ -34,5 +34,5 @@ Pod::Spec.new do |s|
   }
 
   s.frameworks = 'UIKit'
-  s.dependency 'SwiftMoment', '~> 0.1.2'
+  s.dependency 'SwiftMoment', '~> 0.1'
 end
