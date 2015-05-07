@@ -35,7 +35,7 @@ pod "CalendarView"
 Use the `CalendarView` class in code:
 
 ```swift
-let calendar = CalendarView(frame: CGRectMake(0, 0, CGRectGetWidth(view), 320))
+let calendar = CalendarView(frame: CGRectMake(0, 0, CGRectGetWidth(view.frame), 320))
 view.addSubview(calendar)
 ```
 
