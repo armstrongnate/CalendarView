@@ -45,6 +45,16 @@ or as an outlet (supports auto layout)
 @IBOutlet weak var calendar: CalendarView!
 ```
 
+### Select specific date
+
+The selected date is the current date by default. You can select any date by using
+the `selectDate(date: Moment)` method.
+
+```swift
+let date: NSDate = MY_NSDATE
+calendar.selectDate(moment(date))
+```
+
 ### Delegate
 
 A `CalendarView`'s `delegate` is notified of two events:
