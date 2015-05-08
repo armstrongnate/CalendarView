@@ -25,6 +25,7 @@ public class CalendarView: UIView {
     static var daySelectedTextColor = UIColor.whiteColor()
     static var otherMonthTextColor = UIColor.lightGrayColor()
     static var otherMonthBackgroundColor = UIColor.clearColor()
+    static var weekLabelTextColor = UIColor.blackColor()
   }
 
   public class var dayBackgroundColor: UIColor {
@@ -58,6 +59,10 @@ public class CalendarView: UIView {
   public class var otherMonthBackgroundColor: UIColor {
     get { return Appearance.otherMonthBackgroundColor }
     set { Appearance.otherMonthBackgroundColor = newValue }
+  }
+  public class var weekLabelTextColor: UIColor {
+    get { return Appearance.weekLabelTextColor }
+    set { Appearance.weekLabelTextColor = newValue }
   }
 
   lazy var contentView: ContentView = {
