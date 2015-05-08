@@ -113,6 +113,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     CalendarView.otherMonthTextColor = UIColor(white: 1.0, alpha: 0.3)
     CalendarView.dayTextColor = UIColor(white: 1.0, alpha: 0.6)
     CalendarView.dayBackgroundColor = UIColor.clearColor()
+    CalendarView.weekLabelTextColor = UIColor(white: 1.0, alpha: 0.3)
 
     return true
   }
