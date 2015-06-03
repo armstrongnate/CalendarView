@@ -92,7 +92,7 @@ class DayView: UIView {
 
 }
 
-extension Moment {
+public extension Moment {
 
   func toNSDate() -> NSDate? {
     let epoch = moment(NSDate(timeIntervalSince1970: 0))
