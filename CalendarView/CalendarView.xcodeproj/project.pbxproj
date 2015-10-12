@@ -17,6 +17,7 @@
 		1D91F8E91BCC1F5F0040FF1B /* MonthView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D91F8E21BCC1F5F0040FF1B /* MonthView.swift */; settings = {ASSET_TAGS = (); }; };
 		1D91F8EA1BCC1F5F0040FF1B /* WeekView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D91F8E31BCC1F5F0040FF1B /* WeekView.swift */; settings = {ASSET_TAGS = (); }; };
 		1D91F8EC1BCC200C0040FF1B /* SwiftMoment.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D91F8EB1BCC200C0040FF1B /* SwiftMoment.framework */; settings = {ASSET_TAGS = (); }; };
+		1DAA13C11BCC406600A2A5B0 /* SwiftMoment.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D91F8EB1BCC200C0040FF1B /* SwiftMoment.framework */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,6 +59,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1DAA13C11BCC406600A2A5B0 /* SwiftMoment.framework in Frameworks */,
 				1D91F8CD1BCC1F4C0040FF1B /* CalendarView.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -164,6 +166,7 @@
 				1D91F8C81BCC1F4C0040FF1B /* Sources */,
 				1D91F8C91BCC1F4C0040FF1B /* Frameworks */,
 				1D91F8CA1BCC1F4C0040FF1B /* Resources */,
+				1D91F8EF1BCC3C600040FF1B /* Embed Carthage Frameworks */,
 			);
 			buildRules = (
 			);
@@ -230,6 +233,21 @@
 
 /* Begin PBXShellScriptBuildPhase section */
 		1D91F8EE1BCC20270040FF1B /* Embed Carthage Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/iOS/SwiftMoment.framework",
+			);
+			name = "Embed Carthage Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/usr/local/bin/carthage copy-frameworks";
+		};
+		1D91F8EF1BCC3C600040FF1B /* Embed Carthage Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -411,6 +429,10 @@
 		1D91F8DA1BCC1F4C0040FF1B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = CalendarViewTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.armstrongnate.CalendarViewTests;
@@ -421,6 +443,10 @@
 		1D91F8DB1BCC1F4C0040FF1B /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = CalendarViewTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.armstrongnate.CalendarViewTests;
@@ -447,6 +473,7 @@
 				1D91F8D81BCC1F4C0040FF1B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		1D91F8D91BCC1F4C0040FF1B /* Build configuration list for PBXNativeTarget "CalendarViewTests" */ = {
 			isa = XCConfigurationList;
@@ -455,6 +482,7 @@
 				1D91F8DB1BCC1F4C0040FF1B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
