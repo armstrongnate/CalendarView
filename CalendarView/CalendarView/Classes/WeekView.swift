@@ -57,9 +57,9 @@ class WeekView: UIView {
 
   func setDays() {
     if days.count > 0 {
-      for i in 1...days.count {
-        let day = days[i - 1]
-        let dayDate = date.add(i - 1, .Days)
+      for i in 0..<days.count {
+        let day = days[i]
+        let dayDate = date.add(i, .Days)
         day.isToday = dayDate.isToday()
         day.isOtherMonth = !month.isSameMonth(dayDate)
         day.selected = false
