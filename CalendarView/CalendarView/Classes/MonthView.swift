@@ -92,7 +92,7 @@ class MonthView: UIView {
         let week = weeks[i - 1]
         week.month = date
         week.date = currentDay
-        currentDay = currentDay.add(7, .Days)
+        currentDay = currentDay.endOf(.Days).add(7, .Days)
         week.hidden = i > numWeeks
       }
     }

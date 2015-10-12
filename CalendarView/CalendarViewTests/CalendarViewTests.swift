@@ -8,6 +8,7 @@
 
 import XCTest
 @testable import CalendarView
+import SwiftMoment
 
 class CalendarViewTests: XCTestCase {
     
@@ -21,16 +22,14 @@ class CalendarViewTests: XCTestCase {
         super.tearDown()
     }
     
-    func testExample() {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
+    func testNovember2015Bug() {
+        let october = moment("10-12-2015")!
+        XCTAssertEqual("October 12, 2015", october.format("MMMM d, yyyy"))
+        let november = october.add(1, .Months)
+        let date = november.startOf(.Months)
+        XCTAssertEqual(1, date.day)
+        let date2 = date.endOf(.Days).add(1, .Days)
+        XCTAssertEqual(2, date2.day)
     }
-    
-    func testPerformanceExample() {
-        // This is an example of a performance test case.
-        self.measureBlock {
-            // Put the code you want to measure the time of here.
-        }
-    }
-    
+
 }
