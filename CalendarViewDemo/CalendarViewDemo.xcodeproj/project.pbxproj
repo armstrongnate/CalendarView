@@ -13,7 +13,7 @@
 		43B05B381AFC0D7F003336B9 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 43B05B371AFC0D7F003336B9 /* Images.xcassets */; };
 		43B05B3B1AFC0D7F003336B9 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 43B05B391AFC0D7F003336B9 /* LaunchScreen.xib */; };
 		43B05B471AFC0D7F003336B9 /* CalendarViewDemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43B05B461AFC0D7F003336B9 /* CalendarViewDemoTests.swift */; };
-		F661F69948B6343B9DF45DB7 /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 55920C4940297FB97836E5CB /* Pods.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		F661F69948B6343B9DF45DB7 /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 55920C4940297FB97836E5CB /* Pods.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -183,6 +183,7 @@
 		43B05B231AFC0D7F003336B9 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftUpdateCheck = 0700;
 				LastUpgradeCheck = 0630;
 				ORGANIZATIONNAME = "Nate Armstrong";
 				TargetAttributes = {

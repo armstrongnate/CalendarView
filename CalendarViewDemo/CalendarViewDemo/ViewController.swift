@@ -16,7 +16,7 @@ class ViewController: UIViewController {
 
   var date: Moment! {
     didSet {
-      title = date.format(dateFormat: "MMMM d, yyyy")
+      title = date.format("MMMM d, yyyy")
     }
   }
 
