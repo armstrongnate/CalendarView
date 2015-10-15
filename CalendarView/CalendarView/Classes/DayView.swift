@@ -22,6 +22,7 @@ class DayView: UIView {
   lazy var dateLabel: UILabel = {
     let label = UILabel()
     label.textAlignment = .Center
+    label.font = CalendarView.dayFont
     self.addSubview(label)
     return label
   }()
