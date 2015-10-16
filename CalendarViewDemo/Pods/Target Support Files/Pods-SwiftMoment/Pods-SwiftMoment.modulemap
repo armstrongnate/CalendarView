@@ -1,6 +1,0 @@
-framework module SwiftMoment {
-  umbrella header "Pods-SwiftMoment-umbrella.h"
-
-  export *
-  module * { export * }
-}

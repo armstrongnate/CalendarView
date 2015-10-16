@@ -1,6 +1,0 @@
-framework module CalendarView {
-  umbrella header "Pods-CalendarView-umbrella.h"
-
-  export *
-  module * { export * }
-}
