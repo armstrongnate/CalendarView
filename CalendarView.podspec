@@ -9,7 +9,7 @@
 
 Pod::Spec.new do |s|
   s.name             = "CalendarView"
-  s.version          = "1.0.4"
+  s.version          = "1.1.0"
   s.summary          = "A lightweight calendar view."
   s.description      = <<-DESC
                        A calendar view with a focus on:
