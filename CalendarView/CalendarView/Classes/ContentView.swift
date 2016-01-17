@@ -40,7 +40,7 @@ class ContentView: UIScrollView {
     months = []
     let date = selectedDate ?? moment()
     selectedDate = date
-    var currentDate = date.substract(1, .Months)
+    var currentDate = date.subtract(1, .Months)
     for _ in 1...numMonthsLoaded {
       let month = MonthView(frame: CGRectZero)
       month.date = currentDate
@@ -95,7 +95,7 @@ class ContentView: UIScrollView {
         print("something weird happened")
       }
       else if page1FrameMatched {
-        page3.date = page1.date.substract(1, .Months)
+        page3.date = page1.date.subtract(1, .Months)
         page1.frame = frameCurrent
         page2.frame = frameRight
         page3.frame = frameLeft
