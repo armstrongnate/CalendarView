@@ -6,7 +6,7 @@
 //  Copyright (c) 2015 Adrian Kosmaczewski. All rights reserved.
 //
 
-import UIKit
+import Foundation
 import XCTest
 import SwiftMoment
 
@@ -110,7 +110,7 @@ class MomentTests: XCTestCase {
     func testCanCreateWeirdDateFromComponents() {
         let timeZone = NSTimeZone(abbreviation: "GMT+01")!
         let obj = moment([-2015445, 76, -46, 876, 234565, -999], timeZone: timeZone)!
-        XCTAssertEqual(obj.format(), "2015440-02-13 12:57:81 GMT+01:00", "The date is weird...!")
+        XCTAssertEqual(obj.format(), "2015440-02-13 12:57:11 GMT+01:00", "The date is weird...!")
     }
     
     func testEmptyArrayOfComponentsYieldsNilMoment() {
@@ -174,14 +174,14 @@ class MomentTests: XCTestCase {
         let exactly_thirty_days = moment([2015, 8, 28, 0, 0])!
         XCTAssertEqual(exactly_thirty_days, one.add(1.months), "Duration adds exactly 30 days")
         XCTAssertEqual(30.days, exactly_thirty_days - one, "exactly_thirty_days is a difference of 30 days")
-        XCTAssertEqual(one, exactly_thirty_days.substract(1.months), "Subtracting back to one is okay")
+        XCTAssertEqual(one, exactly_thirty_days.subtract(1.months), "Subtracting back to one is okay")
 
         // adding by a TimeUnit.Month jumps 1 month (not necessarily 30 days)
         let two = moment([2015, 7, 29, 0, 0])!
         let exactly_one_month = moment([2015, 8, 29, 0, 0])!
         XCTAssertEqual(exactly_one_month, two.add(1, .Months), "Time unit adds exactly one month")
         XCTAssertEqual(31.days, exactly_one_month - two, "exactly_on_month is a difference of 31 days")
-        XCTAssertEqual(two, exactly_one_month.substract(1, .Months), "Subtracting back to two is okay")
+        XCTAssertEqual(two, exactly_one_month.subtract(1, .Months), "Subtracting back to two is okay")
 
 
         // use Duration to always add/subtract 365 days for years,
@@ -195,14 +195,14 @@ class MomentTests: XCTestCase {
         let first = moment(today).add(50.days)
         let second = moment(today).add(50, .Days)
         XCTAssertEqual(first, second, "Syntax does not matter when adding days")
-        XCTAssertEqual(first.substract(40, .Days), second.substract(40.days), "Syntax does not matter when subtracting days")
+        XCTAssertEqual(first.subtract(40, .Days), second.subtract(40.days), "Syntax does not matter when subtracting days")
     }
 
     func testAdditionAndSubstractionAreInverse() {
         let today = moment()
         let soon = today + 1.hours
         let now = soon - 1.hours
-        XCTAssertEqual(now, today, "Addition and substraction are inverse operations")
+        XCTAssertEqual(now, today, "Addition and subtraction are inverse operations")
     }
 
     func testFindMaximumMoment() {
@@ -257,6 +257,20 @@ class MomentTests: XCTestCase {
 
         let standard = birthday.format()
         XCTAssertEqual(standard, "1973-09-04 00:00:00 GMT+01:00", "Standard output")
+    }
+
+    func testFormatDatesWithLocale() {
+        let ad = NSLocale(localeIdentifier: "en_US_POSIX")
+        let defaultFormatAd = moment("2015-09-04", locale: ad)!
+        let giveFormatAd    = moment("2015", dateFormat: "yyyy", locale: ad)!
+        XCTAssertEqual(defaultFormatAd.year, 2015, "AD2015")
+        XCTAssertEqual(giveFormatAd.year,    2015, "AD2015")
+
+        let japanese = NSLocale(localeIdentifier: "ja_JP@calendar=japanese")
+        let defaultFormatJapanese = moment("0027-09-04", locale: japanese)!
+        let giveFormatJapanese    = moment("0027", dateFormat: "yyyy", locale: japanese)!
+        XCTAssertEqual(defaultFormatJapanese.year, 2015, "AD2015 == 27 Heisei period")
+        XCTAssertEqual(giveFormatJapanese.year,    2015, "AD2015 == 27 Heisei period")
     }
 
     func testFutureMoment() {
@@ -387,4 +401,22 @@ class MomentTests: XCTestCase {
         XCTAssertEqual(jst.epoch(), gmt.epoch(), "The JST epoch should match GMT epoch")
     }
 
+	func testPublicDate() {
+		let date = NSDate()
+		let now = moment(date)
+		XCTAssertEqual(now.date, date, "The moment's date should be publicly readable")
+		XCTAssertEqual(now.timeZone, NSTimeZone.defaultTimeZone(), "The moment's timeZone should be publicly readable and default to the current timezone")
+	}
+	
+	func testPublicTimeZone() {
+		let date = NSDate()
+		let now = moment(date)
+		XCTAssertEqual(now.timeZone, NSTimeZone.defaultTimeZone(), "The moment's timeZone should be publicly readable and default to the current timezone")
+	}
+
+	func testPublicLocale() {
+		let date = NSDate()
+		let now = moment(date)
+		XCTAssertEqual(now.locale, NSLocale.currentLocale(), "The moment's locale should be publicly readable and default to the current locale")
+	}
 }

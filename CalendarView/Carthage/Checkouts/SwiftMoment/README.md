@@ -9,8 +9,8 @@ objectives are the following:
 - Streamlining getting date components (day, month, etc.) from dates and
   time intervals.
 
-Important: This framework targets iOS 9, Xcode 7 and Swift 2.0 and later
-exclusively.
+Important: This framework targets iOS 9, OS X 10.10, Xcode 7 and Swift 
+2.0 and later exclusively.
 
 ## Installation
 
@@ -22,6 +22,13 @@ your Podfile:
 ```ruby
 pod 'SwiftMoment'
 ```
+
+## OS X Notes
+
+- Drag the created .framework file into the Xcode Project, be sure to tick 'Copy Files to Directory'
+- In the containing applications target, add a new 'Copy File Build Phase'
+- Set the 'Destination' to 'Frameworks'
+- Drag in the created .framework
 
 ## Examples
 
@@ -79,7 +86,7 @@ The two most important components of this library are the `Moment` and
 
 Both `Moment` and `Duration` comply with the `Comparable` protocols, and
 include all the required operators. In addition, `Moment` instances can
-be substracted from one another (which yields a `Duration`) and
+be subtracted from one another (which yields a `Duration`) and
 `Duration` instances can be added to `Moments` to create new moments.
 
 `Moments` and `Durations` are made as immutable as possible.
@@ -92,6 +99,10 @@ functions of the framework.
 ## Playground
 
 A playground is included in the project to learn how to use the library.
+
+## Differences with [Moment.js](http://momentjs.com)
+
+- Format strings `DD` and `dd` do not yield the same results.
 
 ## Contributors
 
