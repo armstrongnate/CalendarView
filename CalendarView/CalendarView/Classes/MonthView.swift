@@ -87,12 +87,12 @@ class MonthView: UIView {
   func setWeeks() {
     if weeks.count > 0 {
       let numWeeks = Int(numDays / 7)
-      var currentDay = date.startOf(.Months).endOf(.Days).subtract(startsOn - 1, .Days)
+      let firstVisibleDate  = date.startOf(.Months).endOf(.Days).subtract(startsOn - 1, .Days).startOf(.Days)
       for i in 1...weeks.count {
+        let firstDateOfWeek = firstVisibleDate.add(7*(i-1), .Days)
         let week = weeks[i - 1]
         week.month = date
-        week.date = currentDay
-        currentDay = currentDay.endOf(.Days).add(7, .Days)
+        week.date = firstDateOfWeek
         week.hidden = i > numWeeks
       }
     }
