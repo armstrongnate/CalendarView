@@ -32,4 +32,13 @@ class CalendarViewTests: XCTestCase {
         XCTAssertEqual(2, date2.day)
     }
 
+    // See: https://github.com/n8armstrong/CalendarView/issues/7
+    func testSecondSundayInMarchBug() {
+        let marchFirst = moment("3-1-2016")!
+        let firstVisibleDay = marchFirst.startOf(.Months).endOf(.Days).subtract(marchFirst.weekday - 1, .Days).startOf(.Days)
+        XCTAssertEqual("February 28, 2016", firstVisibleDay.format("MMMM d, yyyy"))
+        let dayInQuestion = firstVisibleDay.add(14, .Days)
+        XCTAssertEqual(13, dayInQuestion.day)
+    }
+
 }
