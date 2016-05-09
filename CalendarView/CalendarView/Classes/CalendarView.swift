@@ -101,7 +101,6 @@ public class CalendarView: UIView {
   override public func willMoveToWindow(newWindow: UIWindow?) {
     if newWindow == nil {
       NSNotificationCenter.defaultCenter().removeObserver(self)
-      contentView.removeObservers()
     } else {
       NSNotificationCenter.defaultCenter().addObserver(self, selector: "dateSelected:", name: CalendarSelectedDayNotification, object: nil)
     }
