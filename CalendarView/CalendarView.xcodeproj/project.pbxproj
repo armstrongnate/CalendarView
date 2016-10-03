@@ -190,12 +190,10 @@
 				TargetAttributes = {
 					1D91F8C11BCC1F4C0040FF1B = {
 						CreatedOnToolsVersion = 7.0;
-						DevelopmentTeam = CX48SSGG62;
 						LastSwiftMigration = 0800;
 					};
 					1D91F8CB1BCC1F4C0040FF1B = {
 						CreatedOnToolsVersion = 7.0;
-						DevelopmentTeam = CX48SSGG62;
 						LastSwiftMigration = 0800;
 					};
 				};
@@ -395,7 +393,7 @@
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEFINES_MODULE = YES;
-				DEVELOPMENT_TEAM = CX48SSGG62;
+				DEVELOPMENT_TEAM = "";
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
@@ -417,7 +415,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				DEFINES_MODULE = YES;
-				DEVELOPMENT_TEAM = CX48SSGG62;
+				DEVELOPMENT_TEAM = "";
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
@@ -438,7 +436,7 @@
 		1D91F8DA1BCC1F4C0040FF1B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				DEVELOPMENT_TEAM = CX48SSGG62;
+				DEVELOPMENT_TEAM = "";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
@@ -454,7 +452,7 @@
 		1D91F8DB1BCC1F4C0040FF1B /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				DEVELOPMENT_TEAM = CX48SSGG62;
+				DEVELOPMENT_TEAM = "";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
