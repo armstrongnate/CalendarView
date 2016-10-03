@@ -109,112 +109,112 @@ func *(lhs: CGFloat, rhs: Double) -> CGFloat {
 }
 
 func %(lhs: Int, rhs: Float) -> Float {
-    return Float(lhs) % Float(rhs)
+    return Float(lhs).truncatingRemainder(dividingBy: Float(rhs))
 }
 func %(lhs: Int, rhs: CGFloat) -> CGFloat {
-    return CGFloat(lhs) % CGFloat(rhs)
+    return CGFloat(lhs).truncatingRemainder(dividingBy: CGFloat(rhs))
 }
 func %(lhs: Int, rhs: Double) -> Double {
-    return Double(lhs) % Double(rhs)
+    return Double(lhs).truncatingRemainder(dividingBy: Double(rhs))
 }
 func %(lhs: Float, rhs: Int) -> Float {
-    return Float(lhs) % Float(rhs)
+    return Float(lhs).truncatingRemainder(dividingBy: Float(rhs))
 }
 func %(lhs: Float, rhs: CGFloat) -> CGFloat {
-    return CGFloat(lhs) % CGFloat(rhs)
+    return CGFloat(lhs).truncatingRemainder(dividingBy: CGFloat(rhs))
 }
 func %(lhs: Float, rhs: Double) -> Double {
-    return Double(lhs) % Double(rhs)
+    return Double(lhs).truncatingRemainder(dividingBy: Double(rhs))
 }
 func %(lhs: CGFloat, rhs: Int) -> CGFloat {
-    return CGFloat(lhs) % CGFloat(rhs)
+    return CGFloat(lhs).truncatingRemainder(dividingBy: CGFloat(rhs))
 }
 func %(lhs: CGFloat, rhs: Float) -> CGFloat {
-    return CGFloat(lhs) % CGFloat(rhs)
+    return CGFloat(lhs).truncatingRemainder(dividingBy: CGFloat(rhs))
 }
 func %(lhs: CGFloat, rhs: Double) -> CGFloat {
-    return CGFloat(lhs) % CGFloat(rhs)
+    return CGFloat(lhs).truncatingRemainder(dividingBy: CGFloat(rhs))
 }
 func %(lhs: Double, rhs: Int) -> Double {
-    return Double(lhs) % Double(rhs)
+    return Double(lhs).truncatingRemainder(dividingBy: Double(rhs))
 }
 func %(lhs: Double, rhs: Float) -> Double {
-    return Double(lhs) % Double(rhs)
+    return Double(lhs).truncatingRemainder(dividingBy: Double(rhs))
 }
 func %(lhs: Double, rhs: CGFloat) -> CGFloat {
-    return CGFloat(lhs) % CGFloat(rhs)
+    return CGFloat(lhs).truncatingRemainder(dividingBy: CGFloat(rhs))
 }
 
-func min(x: Int, y: Float) -> Float {
+func min(_ x: Int, y: Float) -> Float {
     return min(Float(x), Float(y))
 }
-func max(x: Int, y: Float) -> Float {
+func max(_ x: Int, y: Float) -> Float {
     return min(Float(x), Float(y))
 }
-func min(x: Int, y: CGFloat) -> CGFloat {
+func min(_ x: Int, y: CGFloat) -> CGFloat {
     return min(CGFloat(x), CGFloat(y))
 }
-func max(x: Int, y: CGFloat) -> CGFloat {
+func max(_ x: Int, y: CGFloat) -> CGFloat {
     return min(CGFloat(x), CGFloat(y))
 }
-func min(x: Int, y: Double) -> Double {
+func min(_ x: Int, y: Double) -> Double {
     return min(Double(x), Double(y))
 }
-func max(x: Int, y: Double) -> Double {
+func max(_ x: Int, y: Double) -> Double {
     return min(Double(x), Double(y))
 }
-func min(x: Float, y: Int) -> Float {
+func min(_ x: Float, y: Int) -> Float {
     return min(Float(x), Float(y))
 }
-func max(x: Float, y: Int) -> Float {
+func max(_ x: Float, y: Int) -> Float {
     return min(Float(x), Float(y))
 }
-func min(x: Float, y: CGFloat) -> CGFloat {
+func min(_ x: Float, y: CGFloat) -> CGFloat {
     return min(CGFloat(x), CGFloat(y))
 }
-func max(x: Float, y: CGFloat) -> CGFloat {
+func max(_ x: Float, y: CGFloat) -> CGFloat {
     return min(CGFloat(x), CGFloat(y))
 }
-func min(x: Float, y: Double) -> Double {
+func min(_ x: Float, y: Double) -> Double {
     return min(Double(x), Double(y))
 }
-func max(x: Float, y: Double) -> Double {
+func max(_ x: Float, y: Double) -> Double {
     return min(Double(x), Double(y))
 }
-func min(x: CGFloat, y: Int) -> CGFloat {
+func min(_ x: CGFloat, y: Int) -> CGFloat {
     return min(CGFloat(x), CGFloat(y))
 }
-func max(x: CGFloat, y: Int) -> CGFloat {
+func max(_ x: CGFloat, y: Int) -> CGFloat {
     return min(CGFloat(x), CGFloat(y))
 }
-func min(x: CGFloat, y: Float) -> CGFloat {
+func min(_ x: CGFloat, y: Float) -> CGFloat {
     return min(CGFloat(x), CGFloat(y))
 }
-func max(x: CGFloat, y: Float) -> CGFloat {
+func max(_ x: CGFloat, y: Float) -> CGFloat {
     return min(CGFloat(x), CGFloat(y))
 }
-func min(x: CGFloat, y: Double) -> CGFloat {
+func min(_ x: CGFloat, y: Double) -> CGFloat {
     return min(CGFloat(x), CGFloat(y))
 }
-func max(x: CGFloat, y: Double) -> CGFloat {
+func max(_ x: CGFloat, y: Double) -> CGFloat {
     return min(CGFloat(x), CGFloat(y))
 }
-func min(x: Double, y: Int) -> Double {
+func min(_ x: Double, y: Int) -> Double {
     return min(Double(x), Double(y))
 }
-func max(x: Double, y: Int) -> Double {
+func max(_ x: Double, y: Int) -> Double {
     return min(Double(x), Double(y))
 }
-func min(x: Double, y: Float) -> Double {
+func min(_ x: Double, y: Float) -> Double {
     return min(Double(x), Double(y))
 }
-func max(x: Double, y: Float) -> Double {
+func max(_ x: Double, y: Float) -> Double {
     return min(Double(x), Double(y))
 }
-func min(x: Double, y: CGFloat) -> CGFloat {
+func min(_ x: Double, y: CGFloat) -> CGFloat {
     return min(CGFloat(x), CGFloat(y))
 }
-func max(x: Double, y: CGFloat) -> CGFloat {
+func max(_ x: Double, y: CGFloat) -> CGFloat {
     return min(CGFloat(x), CGFloat(y))
 }
 

@@ -8,6 +8,34 @@
 
 /* Begin PBXBuildFile section */
 		16DF56A51C3A7D7900ED9292 /* ExtensionsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16DF56A41C3A7D7900ED9292 /* ExtensionsTests.swift */; };
+		285B8B441D056DCA008A6AD6 /* ExtensionsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16DF56A41C3A7D7900ED9292 /* ExtensionsTests.swift */; };
+		285B8B611D057611008A6AD6 /* MomentTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AB0FB7E1A6D15F8006449DB /* MomentTests.swift */; };
+		285B8B621D057611008A6AD6 /* DurationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A6429C71A6D345500B10310 /* DurationTests.swift */; };
+		285B8B631D057611008A6AD6 /* ExtensionsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16DF56A41C3A7D7900ED9292 /* ExtensionsTests.swift */; };
+		285B8B671D057781008A6AD6 /* SwiftMoment.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 285B8B4A1D057575008A6AD6 /* SwiftMoment.framework */; };
+		285B8B681D057960008A6AD6 /* SwiftMoment.h in Headers */ = {isa = PBXBuildFile; fileRef = 3AB0FB711A6D15F8006449DB /* SwiftMoment.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		285B8B691D057979008A6AD6 /* Moment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AB0FB881A6D160F006449DB /* Moment.swift */; };
+		285B8B6A1D057979008A6AD6 /* TimeUnit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AB0FB8A1A6D1629006449DB /* TimeUnit.swift */; };
+		285B8B6B1D057979008A6AD6 /* Duration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AB0FB8C1A6D1644006449DB /* Duration.swift */; };
+		285B8B6C1D057979008A6AD6 /* Operators.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A6429C31A6D2C8700B10310 /* Operators.swift */; };
+		285B8B6D1D057979008A6AD6 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A6429C51A6D33FA00B10310 /* Extensions.swift */; };
+		2877F4D41D06B42700B66806 /* MomentFromNow.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 53CB62721C919E8000BA62E9 /* MomentFromNow.bundle */; };
+		2877F4D51D06B42800B66806 /* MomentFromNow.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 53CB62721C919E8000BA62E9 /* MomentFromNow.bundle */; };
+		2877F4D61D06B42900B66806 /* MomentFromNow.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 53CB62721C919E8000BA62E9 /* MomentFromNow.bundle */; };
+		2877F4DC1D06BCB900B66806 /* FromNowTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2877F4DB1D06BCB900B66806 /* FromNowTests.swift */; };
+		2877F4DD1D06BCB900B66806 /* FromNowTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2877F4DB1D06BCB900B66806 /* FromNowTests.swift */; };
+		2877F4DE1D06BCB900B66806 /* FromNowTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2877F4DB1D06BCB900B66806 /* FromNowTests.swift */; };
+		2877F4E01D06BF0E00B66806 /* MomentFromNow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2877F4DF1D06BF0E00B66806 /* MomentFromNow.swift */; };
+		2877F4E11D06BF0E00B66806 /* MomentFromNow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2877F4DF1D06BF0E00B66806 /* MomentFromNow.swift */; };
+		2877F4E21D06BF0E00B66806 /* MomentFromNow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2877F4DF1D06BF0E00B66806 /* MomentFromNow.swift */; };
+		2877F4E31D06BF0E00B66806 /* MomentFromNow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2877F4DF1D06BF0E00B66806 /* MomentFromNow.swift */; };
+		28819E9B1D0594C800534ACD /* MomentFromNow.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 53CB62721C919E8000BA62E9 /* MomentFromNow.bundle */; };
+		28C0DBCA1D057E3600279645 /* SwiftMoment.h in Headers */ = {isa = PBXBuildFile; fileRef = 3AB0FB711A6D15F8006449DB /* SwiftMoment.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		28C0DBCB1D057E4000279645 /* Moment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AB0FB881A6D160F006449DB /* Moment.swift */; };
+		28C0DBCC1D057E4000279645 /* TimeUnit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AB0FB8A1A6D1629006449DB /* TimeUnit.swift */; };
+		28C0DBCD1D057E4000279645 /* Duration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AB0FB8C1A6D1644006449DB /* Duration.swift */; };
+		28C0DBCE1D057E4000279645 /* Operators.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A6429C31A6D2C8700B10310 /* Operators.swift */; };
+		28C0DBCF1D057E4000279645 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A6429C51A6D33FA00B10310 /* Extensions.swift */; };
 		3A6429C41A6D2C8700B10310 /* Operators.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A6429C31A6D2C8700B10310 /* Operators.swift */; };
 		3A6429C61A6D33FA00B10310 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A6429C51A6D33FA00B10310 /* Extensions.swift */; };
 		3A6429C81A6D345500B10310 /* DurationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A6429C71A6D345500B10310 /* DurationTests.swift */; };
@@ -17,6 +45,9 @@
 		3AB0FB891A6D160F006449DB /* Moment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AB0FB881A6D160F006449DB /* Moment.swift */; };
 		3AB0FB8B1A6D1629006449DB /* TimeUnit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AB0FB8A1A6D1629006449DB /* TimeUnit.swift */; };
 		3AB0FB8D1A6D1644006449DB /* Duration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AB0FB8C1A6D1644006449DB /* Duration.swift */; };
+		53C2DA3B1C99956E00604118 /* MomentFromNow.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 53CB62721C919E8000BA62E9 /* MomentFromNow.bundle */; };
+		53C2DA3C1C99957E00604118 /* MomentFromNow.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 53CB62721C919E8000BA62E9 /* MomentFromNow.bundle */; };
+		53CB62741C919E8000BA62E9 /* MomentFromNow.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 53CB62721C919E8000BA62E9 /* MomentFromNow.bundle */; };
 		E2532BF11C358B4E00392471 /* SwiftMoment.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E2F6254B1C357BC00057AE1D /* SwiftMoment.framework */; };
 		E2532BF71C358BC000392471 /* MomentTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AB0FB7E1A6D15F8006449DB /* MomentTests.swift */; };
 		E2532BF81C358BC000392471 /* DurationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A6429C71A6D345500B10310 /* DurationTests.swift */; };
@@ -29,6 +60,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		285B8B651D057779008A6AD6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3AB0FB631A6D15F8006449DB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 285B8B491D057575008A6AD6;
+			remoteInfo = "SwiftMoment tvOS";
+		};
 		3AB0FB791A6D15F8006449DB /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 3AB0FB631A6D15F8006449DB /* Project object */;
@@ -47,6 +85,11 @@
 
 /* Begin PBXFileReference section */
 		16DF56A41C3A7D7900ED9292 /* ExtensionsTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExtensionsTests.swift; sourceTree = "<group>"; };
+		285B8B4A1D057575008A6AD6 /* SwiftMoment.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SwiftMoment.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		285B8B531D057575008A6AD6 /* SwiftMoment tvOS Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "SwiftMoment tvOS Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2877F4DB1D06BCB900B66806 /* FromNowTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FromNowTests.swift; sourceTree = "<group>"; };
+		2877F4DF1D06BF0E00B66806 /* MomentFromNow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MomentFromNow.swift; sourceTree = "<group>"; };
+		28C0DBC21D057D9F00279645 /* SwiftMoment.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SwiftMoment.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3A6429C31A6D2C8700B10310 /* Operators.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Operators.swift; sourceTree = "<group>"; };
 		3A6429C51A6D33FA00B10310 /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		3A6429C71A6D345500B10310 /* DurationTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DurationTests.swift; sourceTree = "<group>"; };
@@ -54,19 +97,40 @@
 		3AB0FB6C1A6D15F8006449DB /* SwiftMoment.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SwiftMoment.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3AB0FB701A6D15F8006449DB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3AB0FB711A6D15F8006449DB /* SwiftMoment.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SwiftMoment.h; sourceTree = "<group>"; };
-		3AB0FB771A6D15F8006449DB /* SwiftMomentTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftMomentTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3AB0FB771A6D15F8006449DB /* SwiftMoment iOS Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "SwiftMoment iOS Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3AB0FB7D1A6D15F8006449DB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3AB0FB7E1A6D15F8006449DB /* MomentTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MomentTests.swift; sourceTree = "<group>"; };
 		3AB0FB881A6D160F006449DB /* Moment.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Moment.swift; sourceTree = "<group>"; };
 		3AB0FB8A1A6D1629006449DB /* TimeUnit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimeUnit.swift; sourceTree = "<group>"; };
 		3AB0FB8C1A6D1644006449DB /* Duration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Duration.swift; sourceTree = "<group>"; };
-		E2532BEC1C358B4E00392471 /* SwiftMomentOSXTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftMomentOSXTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		E2532BF91C358BF000392471 /* InfoOSX.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = InfoOSX.plist; sourceTree = "<group>"; };
+		53CB62721C919E8000BA62E9 /* MomentFromNow.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = MomentFromNow.bundle; sourceTree = "<group>"; };
+		E2532BEC1C358B4E00392471 /* SwiftMoment macOS Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "SwiftMoment macOS Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E2F6254B1C357BC00057AE1D /* SwiftMoment.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SwiftMoment.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		E2F6254D1C357CEB0057AE1D /* InfoOSX.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = InfoOSX.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		285B8B461D057575008A6AD6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		285B8B501D057575008A6AD6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				285B8B671D057781008A6AD6 /* SwiftMoment.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		28C0DBBE1D057D9F00279645 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		3AB0FB681A6D15F8006449DB /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -114,9 +178,12 @@
 			isa = PBXGroup;
 			children = (
 				3AB0FB6C1A6D15F8006449DB /* SwiftMoment.framework */,
-				3AB0FB771A6D15F8006449DB /* SwiftMomentTests.xctest */,
+				3AB0FB771A6D15F8006449DB /* SwiftMoment iOS Tests.xctest */,
 				E2F6254B1C357BC00057AE1D /* SwiftMoment.framework */,
-				E2532BEC1C358B4E00392471 /* SwiftMomentOSXTests.xctest */,
+				E2532BEC1C358B4E00392471 /* SwiftMoment macOS Tests.xctest */,
+				285B8B4A1D057575008A6AD6 /* SwiftMoment.framework */,
+				285B8B531D057575008A6AD6 /* SwiftMoment tvOS Tests.xctest */,
+				28C0DBC21D057D9F00279645 /* SwiftMoment.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -124,9 +191,11 @@
 		3AB0FB6E1A6D15F8006449DB /* SwiftMoment */ = {
 			isa = PBXGroup;
 			children = (
+				53CB62721C919E8000BA62E9 /* MomentFromNow.bundle */,
 				3AB0FB711A6D15F8006449DB /* SwiftMoment.h */,
 				3AB0FB6F1A6D15F8006449DB /* Supporting Files */,
 				3AB0FB881A6D160F006449DB /* Moment.swift */,
+				2877F4DF1D06BF0E00B66806 /* MomentFromNow.swift */,
 				3AB0FB8A1A6D1629006449DB /* TimeUnit.swift */,
 				3AB0FB8C1A6D1644006449DB /* Duration.swift */,
 				3A6429C31A6D2C8700B10310 /* Operators.swift */,
@@ -138,7 +207,6 @@
 		3AB0FB6F1A6D15F8006449DB /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				E2F6254D1C357CEB0057AE1D /* InfoOSX.plist */,
 				3AB0FB701A6D15F8006449DB /* Info.plist */,
 			);
 			name = "Supporting Files";
@@ -147,9 +215,10 @@
 		3AB0FB7B1A6D15F8006449DB /* SwiftMomentTests */ = {
 			isa = PBXGroup;
 			children = (
-				3AB0FB7E1A6D15F8006449DB /* MomentTests.swift */,
 				3A6429C71A6D345500B10310 /* DurationTests.swift */,
 				16DF56A41C3A7D7900ED9292 /* ExtensionsTests.swift */,
+				2877F4DB1D06BCB900B66806 /* FromNowTests.swift */,
+				3AB0FB7E1A6D15F8006449DB /* MomentTests.swift */,
 				3AB0FB7C1A6D15F8006449DB /* Supporting Files */,
 			);
 			path = SwiftMomentTests;
@@ -158,7 +227,6 @@
 		3AB0FB7C1A6D15F8006449DB /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				E2532BF91C358BF000392471 /* InfoOSX.plist */,
 				3AB0FB7D1A6D15F8006449DB /* Info.plist */,
 			);
 			name = "Supporting Files";
@@ -167,6 +235,22 @@
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
+		285B8B471D057575008A6AD6 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				285B8B681D057960008A6AD6 /* SwiftMoment.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		28C0DBBF1D057D9F00279645 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				28C0DBCA1D057E3600279645 /* SwiftMoment.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		3AB0FB691A6D15F8006449DB /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
@@ -186,27 +270,84 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		3AB0FB6B1A6D15F8006449DB /* SwiftMoment */ = {
+		285B8B491D057575008A6AD6 /* SwiftMoment tvOS */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 3AB0FB821A6D15F8006449DB /* Build configuration list for PBXNativeTarget "SwiftMoment" */;
+			buildConfigurationList = 285B8B5B1D057575008A6AD6 /* Build configuration list for PBXNativeTarget "SwiftMoment tvOS" */;
 			buildPhases = (
-				3AB0FB671A6D15F8006449DB /* Sources */,
-				3AB0FB681A6D15F8006449DB /* Frameworks */,
-				3AB0FB691A6D15F8006449DB /* Headers */,
-				3AB0FB6A1A6D15F8006449DB /* Resources */,
+				285B8B451D057575008A6AD6 /* Sources */,
+				285B8B461D057575008A6AD6 /* Frameworks */,
+				285B8B471D057575008A6AD6 /* Headers */,
+				285B8B481D057575008A6AD6 /* Resources */,
+				2877F4D91D06B87100B66806 /* Swiftlint */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = SwiftMoment;
+			name = "SwiftMoment tvOS";
+			productName = SwiftMoment;
+			productReference = 285B8B4A1D057575008A6AD6 /* SwiftMoment.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		285B8B521D057575008A6AD6 /* SwiftMoment tvOS Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 285B8B5E1D057575008A6AD6 /* Build configuration list for PBXNativeTarget "SwiftMoment tvOS Tests" */;
+			buildPhases = (
+				285B8B4F1D057575008A6AD6 /* Sources */,
+				285B8B501D057575008A6AD6 /* Frameworks */,
+				285B8B511D057575008A6AD6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				285B8B661D057779008A6AD6 /* PBXTargetDependency */,
+			);
+			name = "SwiftMoment tvOS Tests";
+			productName = SwiftMomentTests;
+			productReference = 285B8B531D057575008A6AD6 /* SwiftMoment tvOS Tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		28C0DBC11D057D9F00279645 /* SwiftMoment watchOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 28C0DBC71D057D9F00279645 /* Build configuration list for PBXNativeTarget "SwiftMoment watchOS" */;
+			buildPhases = (
+				28C0DBBD1D057D9F00279645 /* Sources */,
+				28C0DBBE1D057D9F00279645 /* Frameworks */,
+				28C0DBBF1D057D9F00279645 /* Headers */,
+				28C0DBC01D057D9F00279645 /* Resources */,
+				2877F4DA1D06B88000B66806 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "SwiftMoment watchOS";
+			productName = "SwiftMoment watchOS";
+			productReference = 28C0DBC21D057D9F00279645 /* SwiftMoment.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		3AB0FB6B1A6D15F8006449DB /* SwiftMoment iOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3AB0FB821A6D15F8006449DB /* Build configuration list for PBXNativeTarget "SwiftMoment iOS" */;
+			buildPhases = (
+				3AB0FB671A6D15F8006449DB /* Sources */,
+				3AB0FB681A6D15F8006449DB /* Frameworks */,
+				3AB0FB691A6D15F8006449DB /* Headers */,
+				3AB0FB6A1A6D15F8006449DB /* Resources */,
+				2877F4D71D06B82E00B66806 /* Swiftlint */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "SwiftMoment iOS";
 			productName = SwiftMoment;
 			productReference = 3AB0FB6C1A6D15F8006449DB /* SwiftMoment.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		3AB0FB761A6D15F8006449DB /* SwiftMomentTests */ = {
+		3AB0FB761A6D15F8006449DB /* SwiftMoment iOS Tests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 3AB0FB851A6D15F8006449DB /* Build configuration list for PBXNativeTarget "SwiftMomentTests" */;
+			buildConfigurationList = 3AB0FB851A6D15F8006449DB /* Build configuration list for PBXNativeTarget "SwiftMoment iOS Tests" */;
 			buildPhases = (
 				3AB0FB731A6D15F8006449DB /* Sources */,
 				3AB0FB741A6D15F8006449DB /* Frameworks */,
@@ -217,14 +358,14 @@
 			dependencies = (
 				3AB0FB7A1A6D15F8006449DB /* PBXTargetDependency */,
 			);
-			name = SwiftMomentTests;
+			name = "SwiftMoment iOS Tests";
 			productName = SwiftMomentTests;
-			productReference = 3AB0FB771A6D15F8006449DB /* SwiftMomentTests.xctest */;
+			productReference = 3AB0FB771A6D15F8006449DB /* SwiftMoment iOS Tests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		E2532BEB1C358B4E00392471 /* SwiftMomentOSXTests */ = {
+		E2532BEB1C358B4E00392471 /* SwiftMoment macOS Tests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = E2532BF61C358B4E00392471 /* Build configuration list for PBXNativeTarget "SwiftMomentOSXTests" */;
+			buildConfigurationList = E2532BF61C358B4E00392471 /* Build configuration list for PBXNativeTarget "SwiftMoment macOS Tests" */;
 			buildPhases = (
 				E2532BE81C358B4E00392471 /* Sources */,
 				E2532BE91C358B4E00392471 /* Frameworks */,
@@ -235,25 +376,26 @@
 			dependencies = (
 				E2532BF31C358B4E00392471 /* PBXTargetDependency */,
 			);
-			name = SwiftMomentOSXTests;
+			name = "SwiftMoment macOS Tests";
 			productName = SwiftMomentOSXTests;
-			productReference = E2532BEC1C358B4E00392471 /* SwiftMomentOSXTests.xctest */;
+			productReference = E2532BEC1C358B4E00392471 /* SwiftMoment macOS Tests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		E2F6253D1C357BC00057AE1D /* SwiftMomentOSX */ = {
+		E2F6253D1C357BC00057AE1D /* SwiftMoment macOS */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = E2F625481C357BC00057AE1D /* Build configuration list for PBXNativeTarget "SwiftMomentOSX" */;
+			buildConfigurationList = E2F625481C357BC00057AE1D /* Build configuration list for PBXNativeTarget "SwiftMoment macOS" */;
 			buildPhases = (
 				E2F6253E1C357BC00057AE1D /* Sources */,
 				E2F625441C357BC00057AE1D /* Frameworks */,
 				E2F625451C357BC00057AE1D /* Headers */,
 				E2F625471C357BC00057AE1D /* Resources */,
+				2877F4D81D06B86100B66806 /* Swiftlint */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = SwiftMomentOSX;
+			name = "SwiftMoment macOS";
 			productName = SwiftMoment;
 			productReference = E2F6254B1C357BC00057AE1D /* SwiftMoment.framework */;
 			productType = "com.apple.product-type.framework";
@@ -265,18 +407,36 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftMigration = 0700;
-				LastSwiftUpdateCheck = 0720;
-				LastUpgradeCheck = 0610;
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0800;
 				ORGANIZATIONNAME = "Adrian Kosmaczewski";
 				TargetAttributes = {
+					285B8B491D057575008A6AD6 = {
+						CreatedOnToolsVersion = 7.3.1;
+						LastSwiftMigration = 0800;
+					};
+					285B8B521D057575008A6AD6 = {
+						CreatedOnToolsVersion = 7.3.1;
+						LastSwiftMigration = 0800;
+					};
+					28C0DBC11D057D9F00279645 = {
+						CreatedOnToolsVersion = 7.3.1;
+						LastSwiftMigration = 0800;
+					};
 					3AB0FB6B1A6D15F8006449DB = {
 						CreatedOnToolsVersion = 6.1.1;
+						LastSwiftMigration = 0800;
 					};
 					3AB0FB761A6D15F8006449DB = {
 						CreatedOnToolsVersion = 6.1.1;
+						LastSwiftMigration = 0800;
 					};
 					E2532BEB1C358B4E00392471 = {
 						CreatedOnToolsVersion = 7.2;
+						LastSwiftMigration = 0800;
+					};
+					E2F6253D1C357BC00057AE1D = {
+						LastSwiftMigration = 0800;
 					};
 				};
 			};
@@ -292,19 +452,47 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				3AB0FB6B1A6D15F8006449DB /* SwiftMoment */,
-				3AB0FB761A6D15F8006449DB /* SwiftMomentTests */,
-				E2F6253D1C357BC00057AE1D /* SwiftMomentOSX */,
-				E2532BEB1C358B4E00392471 /* SwiftMomentOSXTests */,
+				3AB0FB6B1A6D15F8006449DB /* SwiftMoment iOS */,
+				3AB0FB761A6D15F8006449DB /* SwiftMoment iOS Tests */,
+				E2F6253D1C357BC00057AE1D /* SwiftMoment macOS */,
+				E2532BEB1C358B4E00392471 /* SwiftMoment macOS Tests */,
+				285B8B491D057575008A6AD6 /* SwiftMoment tvOS */,
+				285B8B521D057575008A6AD6 /* SwiftMoment tvOS Tests */,
+				28C0DBC11D057D9F00279645 /* SwiftMoment watchOS */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		285B8B481D057575008A6AD6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2877F4D41D06B42700B66806 /* MomentFromNow.bundle in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		285B8B511D057575008A6AD6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2877F4D51D06B42800B66806 /* MomentFromNow.bundle in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		28C0DBC01D057D9F00279645 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2877F4D61D06B42900B66806 /* MomentFromNow.bundle in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		3AB0FB6A1A6D15F8006449DB /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				53C2DA3B1C99956E00604118 /* MomentFromNow.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -312,6 +500,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				53C2DA3C1C99957E00604118 /* MomentFromNow.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -319,6 +508,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				28819E9B1D0594C800534ACD /* MomentFromNow.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -326,12 +516,108 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				53CB62741C919E8000BA62E9 /* MomentFromNow.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		2877F4D71D06B82E00B66806 /* Swiftlint */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = Swiftlint;
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if which swiftlint >/dev/null; then\n    swiftlint\nelse\n    echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi";
+		};
+		2877F4D81D06B86100B66806 /* Swiftlint */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = Swiftlint;
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if which swiftlint >/dev/null; then\n    swiftlint\nelse\n    echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi";
+		};
+		2877F4D91D06B87100B66806 /* Swiftlint */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = Swiftlint;
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if which swiftlint >/dev/null; then\n    swiftlint\nelse\n    echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi";
+		};
+		2877F4DA1D06B88000B66806 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if which swiftlint >/dev/null; then\n    swiftlint\nelse\n    echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
+		285B8B451D057575008A6AD6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				285B8B6D1D057979008A6AD6 /* Extensions.swift in Sources */,
+				285B8B6B1D057979008A6AD6 /* Duration.swift in Sources */,
+				285B8B6C1D057979008A6AD6 /* Operators.swift in Sources */,
+				285B8B6A1D057979008A6AD6 /* TimeUnit.swift in Sources */,
+				2877F4E21D06BF0E00B66806 /* MomentFromNow.swift in Sources */,
+				285B8B691D057979008A6AD6 /* Moment.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		285B8B4F1D057575008A6AD6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2877F4DE1D06BCB900B66806 /* FromNowTests.swift in Sources */,
+				285B8B611D057611008A6AD6 /* MomentTests.swift in Sources */,
+				285B8B631D057611008A6AD6 /* ExtensionsTests.swift in Sources */,
+				285B8B621D057611008A6AD6 /* DurationTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		28C0DBBD1D057D9F00279645 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				28C0DBCF1D057E4000279645 /* Extensions.swift in Sources */,
+				28C0DBCD1D057E4000279645 /* Duration.swift in Sources */,
+				28C0DBCE1D057E4000279645 /* Operators.swift in Sources */,
+				28C0DBCC1D057E4000279645 /* TimeUnit.swift in Sources */,
+				2877F4E31D06BF0E00B66806 /* MomentFromNow.swift in Sources */,
+				28C0DBCB1D057E4000279645 /* Moment.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		3AB0FB671A6D15F8006449DB /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -340,6 +626,7 @@
 				3AB0FB8D1A6D1644006449DB /* Duration.swift in Sources */,
 				3A6429C41A6D2C8700B10310 /* Operators.swift in Sources */,
 				3AB0FB8B1A6D1629006449DB /* TimeUnit.swift in Sources */,
+				2877F4E01D06BF0E00B66806 /* MomentFromNow.swift in Sources */,
 				3AB0FB891A6D160F006449DB /* Moment.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -348,6 +635,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2877F4DC1D06BCB900B66806 /* FromNowTests.swift in Sources */,
 				3AB0FB7F1A6D15F8006449DB /* MomentTests.swift in Sources */,
 				16DF56A51C3A7D7900ED9292 /* ExtensionsTests.swift in Sources */,
 				3A6429C81A6D345500B10310 /* DurationTests.swift in Sources */,
@@ -358,8 +646,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2877F4DD1D06BCB900B66806 /* FromNowTests.swift in Sources */,
 				E2532BF71C358BC000392471 /* MomentTests.swift in Sources */,
 				E2532BF81C358BC000392471 /* DurationTests.swift in Sources */,
+				285B8B441D056DCA008A6AD6 /* ExtensionsTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -371,6 +661,7 @@
 				E2F625401C357BC00057AE1D /* Duration.swift in Sources */,
 				E2F625411C357BC00057AE1D /* Operators.swift in Sources */,
 				E2F625421C357BC00057AE1D /* TimeUnit.swift in Sources */,
+				2877F4E11D06BF0E00B66806 /* MomentFromNow.swift in Sources */,
 				E2F625431C357BC00057AE1D /* Moment.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -378,19 +669,157 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		285B8B661D057779008A6AD6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 285B8B491D057575008A6AD6 /* SwiftMoment tvOS */;
+			targetProxy = 285B8B651D057779008A6AD6 /* PBXContainerItemProxy */;
+		};
 		3AB0FB7A1A6D15F8006449DB /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 3AB0FB6B1A6D15F8006449DB /* SwiftMoment */;
+			target = 3AB0FB6B1A6D15F8006449DB /* SwiftMoment iOS */;
 			targetProxy = 3AB0FB791A6D15F8006449DB /* PBXContainerItemProxy */;
 		};
 		E2532BF31C358B4E00392471 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = E2F6253D1C357BC00057AE1D /* SwiftMomentOSX */;
+			target = E2F6253D1C357BC00057AE1D /* SwiftMoment macOS */;
 			targetProxy = E2532BF21C358B4E00392471 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
+		285B8B5C1D057575008A6AD6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NONNULL = YES;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = SwiftMoment/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.akosma.SwiftMoment;
+				PRODUCT_NAME = SwiftMoment;
+				SDKROOT = appletvos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 9.0;
+			};
+			name = Debug;
+		};
+		285B8B5D1D057575008A6AD6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NONNULL = YES;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = SwiftMoment/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.akosma.SwiftMoment;
+				PRODUCT_NAME = SwiftMoment;
+				SDKROOT = appletvos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 9.0;
+			};
+			name = Release;
+		};
+		285B8B5F1D057575008A6AD6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NONNULL = YES;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = SwiftMomentTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.akosma.SwiftMoment-tvOS-Tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = appletvos;
+				SWIFT_VERSION = 3.0;
+				TVOS_DEPLOYMENT_TARGET = 9.2;
+			};
+			name = Debug;
+		};
+		285B8B601D057575008A6AD6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NONNULL = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = SwiftMomentTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.akosma.SwiftMoment-tvOS-Tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = appletvos;
+				SWIFT_VERSION = 3.0;
+				TVOS_DEPLOYMENT_TARGET = 9.2;
+			};
+			name = Release;
+		};
+		28C0DBC81D057D9F00279645 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = SwiftMoment/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.akosma.SwiftMoment-watchOS";
+				PRODUCT_NAME = SwiftMoment;
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Debug;
+		};
+		28C0DBC91D057D9F00279645 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = SwiftMoment/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.akosma.SwiftMoment-watchOS";
+				PRODUCT_NAME = SwiftMoment;
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Release;
+		};
 		3AB0FB801A6D15F8006449DB /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -404,16 +833,20 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				CURRENT_PROJECT_VERSION = 1;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
@@ -450,8 +883,10 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -460,6 +895,7 @@
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
 				GCC_WARN_UNDECLARED_SELECTOR = YES;
@@ -469,6 +905,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -480,6 +917,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
@@ -488,9 +926,11 @@
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.akosma.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_NAME = SwiftMoment;
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -499,6 +939,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
@@ -507,8 +948,10 @@
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.akosma.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_NAME = SwiftMoment;
 				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
@@ -526,7 +969,9 @@
 				);
 				INFOPLIST_FILE = SwiftMomentTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.akosma.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
@@ -539,7 +984,9 @@
 				);
 				INFOPLIST_FILE = SwiftMomentTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.akosma.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};
@@ -551,12 +998,13 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_TESTABILITY = YES;
 				GCC_NO_COMMON_BLOCKS = YES;
-				INFOPLIST_FILE = SwiftMomentTests/InfoOSX.plist;
+				INFOPLIST_FILE = SwiftMomentTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 10.10;
-				PRODUCT_BUNDLE_IDENTIFIER = com.akosma.SwiftMomentOSXTests;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.akosma.SwiftMoment-macOS-Tests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = macosx;
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
@@ -568,12 +1016,13 @@
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				GCC_NO_COMMON_BLOCKS = YES;
-				INFOPLIST_FILE = SwiftMomentTests/InfoOSX.plist;
+				INFOPLIST_FILE = SwiftMomentTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 10.10;
-				PRODUCT_BUNDLE_IDENTIFIER = com.akosma.SwiftMomentOSXTests;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.akosma.SwiftMoment-macOS-Tests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = macosx;
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};
@@ -581,19 +1030,22 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
+				COMBINE_HIDPI_IMAGES = YES;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = SwiftMoment/InfoOSX.plist;
+				INFOPLIST_FILE = SwiftMoment/Info.plist;
 				INSTALL_PATH = "@executable_path/../Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.akosma.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = SwiftMoment;
 				SDKROOT = macosx;
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -602,18 +1054,21 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
+				COMBINE_HIDPI_IMAGES = YES;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = SwiftMoment/InfoOSX.plist;
+				INFOPLIST_FILE = SwiftMoment/Info.plist;
 				INSTALL_PATH = "@executable_path/../Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.akosma.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = SwiftMoment;
 				SDKROOT = macosx;
 				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
@@ -621,6 +1076,33 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		285B8B5B1D057575008A6AD6 /* Build configuration list for PBXNativeTarget "SwiftMoment tvOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				285B8B5C1D057575008A6AD6 /* Debug */,
+				285B8B5D1D057575008A6AD6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		285B8B5E1D057575008A6AD6 /* Build configuration list for PBXNativeTarget "SwiftMoment tvOS Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				285B8B5F1D057575008A6AD6 /* Debug */,
+				285B8B601D057575008A6AD6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		28C0DBC71D057D9F00279645 /* Build configuration list for PBXNativeTarget "SwiftMoment watchOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				28C0DBC81D057D9F00279645 /* Debug */,
+				28C0DBC91D057D9F00279645 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		3AB0FB661A6D15F8006449DB /* Build configuration list for PBXProject "SwiftMoment" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -630,7 +1112,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		3AB0FB821A6D15F8006449DB /* Build configuration list for PBXNativeTarget "SwiftMoment" */ = {
+		3AB0FB821A6D15F8006449DB /* Build configuration list for PBXNativeTarget "SwiftMoment iOS" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				3AB0FB831A6D15F8006449DB /* Debug */,
@@ -639,7 +1121,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		3AB0FB851A6D15F8006449DB /* Build configuration list for PBXNativeTarget "SwiftMomentTests" */ = {
+		3AB0FB851A6D15F8006449DB /* Build configuration list for PBXNativeTarget "SwiftMoment iOS Tests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				3AB0FB861A6D15F8006449DB /* Debug */,
@@ -648,15 +1130,16 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		E2532BF61C358B4E00392471 /* Build configuration list for PBXNativeTarget "SwiftMomentOSXTests" */ = {
+		E2532BF61C358B4E00392471 /* Build configuration list for PBXNativeTarget "SwiftMoment macOS Tests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				E2532BF41C358B4E00392471 /* Debug */,
 				E2532BF51C358B4E00392471 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
-		E2F625481C357BC00057AE1D /* Build configuration list for PBXNativeTarget "SwiftMomentOSX" */ = {
+		E2F625481C357BC00057AE1D /* Build configuration list for PBXNativeTarget "SwiftMoment macOS" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				E2F625491C357BC00057AE1D /* Debug */,

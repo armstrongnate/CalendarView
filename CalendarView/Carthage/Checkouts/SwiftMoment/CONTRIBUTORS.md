@@ -10,8 +10,13 @@ requests, bug submissions, etc:
 - [Adriano Goncalves](https://github.com/amg1976)
 - [Anders Klenke](https://github.com/andersklenke)
 - [Andrew Barba](https://github.com/AndrewBarba)
+- [Andrew Branch](https://github.com/andrewbranch)
 - [Chris Sloey](https://github.com/chrissloey)
+- [Daniel Cestari](https://github.com/dcestari)
+- [David Harris](https://github.com/toadzky)
+- [Fabio Felici](https://github.com/fabfelici)
 - [Florent Pillet](https://github.com/fpillet)
+- [Hadar Landao](https://github.com/hlandao)
 - [Jake Johnson](https://github.com/johnsonjake)
 - [karupanenura](https://github.com/karupanerura)
 - [Ken Goldfarb](https://github.com/kengoldfarb)
@@ -19,10 +24,13 @@ requests, bug submissions, etc:
 - [Madhava Jay](https://github.com/madhavajay)
 - [Masaya Yashiro](https://github.com/yashims)
 - [Mihyaeru](https://github.com/mihyaeru21)
+- [Narayan Sainaney](https://github.com/nsainaney)
 - [Nate Armstrong](https://github.com/n8armstrong)
+- [Neil](https://github.com/AsFarA)
 - [PG Herveou](https://github.com/pgherveou)
 - [Pine Mizune](https://github.com/pine613)
 - [Ryan Maxwell](https://github.com/ryanmaxwell)
+- [Ryo Yamada](https://github.com/Liooo)
 - [Tomáš Slíž](https://github.com/tomassliz)
 
 Special Thanks
@@ -30,9 +38,11 @@ Special Thanks
 
 A big shoutout to [Dave Verwer](https://twitter.com/daveverwer) who
 kindly featured SwiftMoment in [iOS Dev Weekly issue
-186](http://iosdevweekly.com/issues/186) and to [Natasha
+186](http://iosdevweekly.com/issues/186), to [Natasha
 Murashev](http://natashatherobot.com) who also featured SwiftMoment in
-her newsletter. Please make sure to subscribe to both!
+her newsletter, and to [Swift Sandbox](http://swiftsandbox.io) who 
+featured SwiftMoment in [issue 36](http://swiftsandbox.io/issues/36?#start)!
+Please make sure to subscribe to all of these newsletters!
 
 Also thanks to [Matteo Crippa](https://github.com/matteocrippa) and
 [dkhamsing](https://github.com/dkhamsing) for featuring SwiftMoment in
