@@ -8,16 +8,16 @@
 
 /* Begin PBXBuildFile section */
 		1D91F8C61BCC1F4C0040FF1B /* CalendarView.h in Headers */ = {isa = PBXBuildFile; fileRef = 1D91F8C51BCC1F4C0040FF1B /* CalendarView.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		1D91F8CD1BCC1F4C0040FF1B /* CalendarView.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D91F8C21BCC1F4C0040FF1B /* CalendarView.framework */; settings = {ASSET_TAGS = (); }; };
+		1D91F8CD1BCC1F4C0040FF1B /* CalendarView.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D91F8C21BCC1F4C0040FF1B /* CalendarView.framework */; };
 		1D91F8D21BCC1F4C0040FF1B /* CalendarViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D91F8D11BCC1F4C0040FF1B /* CalendarViewTests.swift */; };
-		1D91F8E51BCC1F5F0040FF1B /* CalendarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D91F8DE1BCC1F5F0040FF1B /* CalendarView.swift */; settings = {ASSET_TAGS = (); }; };
-		1D91F8E61BCC1F5F0040FF1B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D91F8DF1BCC1F5F0040FF1B /* ContentView.swift */; settings = {ASSET_TAGS = (); }; };
-		1D91F8E71BCC1F5F0040FF1B /* DayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D91F8E01BCC1F5F0040FF1B /* DayView.swift */; settings = {ASSET_TAGS = (); }; };
-		1D91F8E81BCC1F5F0040FF1B /* EasyCast.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D91F8E11BCC1F5F0040FF1B /* EasyCast.swift */; settings = {ASSET_TAGS = (); }; };
-		1D91F8E91BCC1F5F0040FF1B /* MonthView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D91F8E21BCC1F5F0040FF1B /* MonthView.swift */; settings = {ASSET_TAGS = (); }; };
-		1D91F8EA1BCC1F5F0040FF1B /* WeekView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D91F8E31BCC1F5F0040FF1B /* WeekView.swift */; settings = {ASSET_TAGS = (); }; };
-		1D91F8EC1BCC200C0040FF1B /* SwiftMoment.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D91F8EB1BCC200C0040FF1B /* SwiftMoment.framework */; settings = {ASSET_TAGS = (); }; };
-		1DAA13C11BCC406600A2A5B0 /* SwiftMoment.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D91F8EB1BCC200C0040FF1B /* SwiftMoment.framework */; settings = {ASSET_TAGS = (); }; };
+		1D91F8E51BCC1F5F0040FF1B /* CalendarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D91F8DE1BCC1F5F0040FF1B /* CalendarView.swift */; };
+		1D91F8E61BCC1F5F0040FF1B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D91F8DF1BCC1F5F0040FF1B /* ContentView.swift */; };
+		1D91F8E71BCC1F5F0040FF1B /* DayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D91F8E01BCC1F5F0040FF1B /* DayView.swift */; };
+		1D91F8E81BCC1F5F0040FF1B /* EasyCast.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D91F8E11BCC1F5F0040FF1B /* EasyCast.swift */; };
+		1D91F8E91BCC1F5F0040FF1B /* MonthView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D91F8E21BCC1F5F0040FF1B /* MonthView.swift */; };
+		1D91F8EA1BCC1F5F0040FF1B /* WeekView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D91F8E31BCC1F5F0040FF1B /* WeekView.swift */; };
+		1D91F8EC1BCC200C0040FF1B /* SwiftMoment.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D91F8EB1BCC200C0040FF1B /* SwiftMoment.framework */; };
+		1DAA13C11BCC406600A2A5B0 /* SwiftMoment.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D91F8EB1BCC200C0040FF1B /* SwiftMoment.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -190,9 +190,11 @@
 				TargetAttributes = {
 					1D91F8C11BCC1F4C0040FF1B = {
 						CreatedOnToolsVersion = 7.0;
+						LastSwiftMigration = 0800;
 					};
 					1D91F8CB1BCC1F4C0040FF1B = {
 						CreatedOnToolsVersion = 7.0;
+						LastSwiftMigration = 0800;
 					};
 				};
 			};
@@ -389,7 +391,9 @@
 		1D91F8D71BCC1F4C0040FF1B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = "";
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
@@ -403,6 +407,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.armstrongnate.CalendarView;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
@@ -410,6 +415,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = "";
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
@@ -423,12 +429,14 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.armstrongnate.CalendarView;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};
 		1D91F8DA1BCC1F4C0040FF1B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				DEVELOPMENT_TEAM = "";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
@@ -437,12 +445,14 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.armstrongnate.CalendarViewTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
 		1D91F8DB1BCC1F4C0040FF1B /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				DEVELOPMENT_TEAM = "";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
@@ -451,6 +461,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.armstrongnate.CalendarViewTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};

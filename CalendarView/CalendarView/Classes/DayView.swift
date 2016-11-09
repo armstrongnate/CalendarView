@@ -21,7 +21,7 @@ class DayView: UIView {
   }
   lazy var dateLabel: UILabel = {
     let label = UILabel()
-    label.textAlignment = .Center
+    label.textAlignment = .center
     label.font = CalendarView.dayFont
     self.addSubview(label)
     return label
@@ -31,20 +31,19 @@ class DayView: UIView {
   var selected: Bool = false {
     didSet {
       if selected {
-        NSNotificationCenter.defaultCenter()
-          .postNotificationName(CalendarSelectedDayNotification, object: date.toNSDate())
+        NotificationCenter.default.post(name: NSNotification.Name(rawValue: CalendarSelectedDayNotification), object: date.toDate())
       }
       updateView()
     }
   }
 
   init() {
-    super.init(frame: CGRectZero)
-    let tap = UITapGestureRecognizer(target: self, action: "select")
+    super.init(frame: CGRect.zero)
+    let tap = UITapGestureRecognizer(target: self, action: #selector(DayView.select as (DayView) -> () -> ()))
     addGestureRecognizer(tap)
-    NSNotificationCenter.defaultCenter().addObserver(self,
-      selector: "onSelected:",
-      name: CalendarSelectedDayNotification,
+    NotificationCenter.default.addObserver(self,
+      selector: #selector(DayView.onSelected(_:)),
+      name: NSNotification.Name(rawValue: CalendarSelectedDayNotification),
       object: nil)
   }
 
@@ -58,12 +57,12 @@ class DayView: UIView {
 
   override func layoutSubviews() {
     super.layoutSubviews()
-    dateLabel.frame = CGRectInset(bounds, 10, 10)
+    dateLabel.frame = bounds.insetBy(dx: 10, dy: 10)
     updateView()
   }
 
-  func onSelected(notification: NSNotification) {
-    if let date = date, nsDate = notification.object as? NSDate {
+  func onSelected(_ notification: Notification) {
+    if let date = date, let nsDate = notification.object as? Date {
       let mo = moment(nsDate)
       if mo.month != date.month || mo.day != date.day {
         selected = false
@@ -73,14 +72,14 @@ class DayView: UIView {
 
   func updateView() {
     if self.selected {
-      dateLabel.textColor = CalendarView.daySelectedTextColor
-      dateLabel.backgroundColor = CalendarView.daySelectedBackgroundColor
-    } else if isToday {
-      dateLabel.textColor = CalendarView.todayTextColor
-      dateLabel.backgroundColor = CalendarView.todayBackgroundColor
-    } else if isOtherMonth {
-      dateLabel.textColor = CalendarView.otherMonthTextColor
-      dateLabel.backgroundColor = CalendarView.otherMonthBackgroundColor
+      self.dateLabel.textColor = CalendarView.daySelectedTextColor
+      self.dateLabel.backgroundColor = CalendarView.daySelectedBackgroundColor
+    } else if self.isToday {
+      self.dateLabel.textColor = CalendarView.todayTextColor
+      self.dateLabel.backgroundColor = CalendarView.todayBackgroundColor
+    } else if self.isOtherMonth {
+      self.dateLabel.textColor = CalendarView.otherMonthTextColor
+      self.dateLabel.backgroundColor = CalendarView.otherMonthBackgroundColor
     } else {
       self.dateLabel.textColor = CalendarView.dayTextColor
       self.dateLabel.backgroundColor = CalendarView.dayBackgroundColor
@@ -95,19 +94,19 @@ class DayView: UIView {
 
 public extension Moment {
 
-  func toNSDate() -> NSDate? {
-    let epoch = moment(NSDate(timeIntervalSince1970: 0))
+  func toDate() -> Date? {
+    let epoch = moment(Date(timeIntervalSince1970: 0))
     let timeInterval = self.intervalSince(epoch)
-    let date = NSDate(timeIntervalSince1970: timeInterval.seconds)
+    let date = Date(timeIntervalSince1970: timeInterval.seconds)
     return date
   }
 
   func isToday() -> Bool {
-    let cal = NSCalendar.currentCalendar()
-    return cal.isDateInToday(self.toNSDate()!)
+    let cal = NSCalendar.current
+    return cal.isDateInToday(self.toDate()!)
   }
 
-  func isSameMonth(other: Moment) -> Bool {
+  func isSameMonth(_ other: Moment) -> Bool {
     return self.month == other.month && self.year == other.year
   }
 

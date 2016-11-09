@@ -51,7 +51,7 @@ class MonthView: UIView {
   func setup() {
     weeks = []
     for _ in 1...maxNumWeeks {
-      let week = WeekView(frame: CGRectZero)
+      let week = WeekView(frame: CGRect.zero)
       addSubview(week)
       weeks.append(week)
     }
@@ -73,14 +73,14 @@ class MonthView: UIView {
     let labelHeight: CGFloat = 18
     let inset: CGFloat = 10
     for label in weekLabels {
-      label.frame = CGRectMake(x, inset, bounds.size.width / 7, labelHeight)
-      x = CGRectGetMaxX(label.frame)
+      label.frame = CGRect(x: x, y: inset, width: bounds.size.width / 7, height: labelHeight)
+      x = label.frame.maxX
     }
     var y: CGFloat = labelHeight + inset
     for i in 1...weeks.count {
       let week = weeks[i - 1]
-      week.frame = CGRectMake(0, y, bounds.size.width, (bounds.size.height - (labelHeight + inset) - inset) / maxNumWeeks)
-      y = CGRectGetMaxY(week.frame)
+      week.frame = CGRect(x: 0, y: y, width: bounds.size.width, height: (bounds.size.height - (labelHeight + inset) - inset) / maxNumWeeks)
+      y = week.frame.maxY
     }
   }
 
@@ -93,7 +93,7 @@ class MonthView: UIView {
         let week = weeks[i - 1]
         week.month = date
         week.date = firstDateOfWeek
-        week.hidden = i > numWeeks
+        week.isHidden = i > numWeeks
       }
     }
   }
@@ -103,11 +103,11 @@ class MonthView: UIView {
 class WeekLabel: UILabel {
 
   init(day: String) {
-    super.init(frame: CGRectZero)
+    super.init(frame: CGRect.zero)
     text = day
-    textAlignment = .Center
+    textAlignment = .center
     textColor = CalendarView.weekLabelTextColor
-    font = UIFont.boldSystemFontOfSize(10)
+    font = UIFont.boldSystemFont(ofSize: 10)
   }
 
   required init?(coder aDecoder: NSCoder) {
