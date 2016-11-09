@@ -40,7 +40,7 @@ class WeekView: UIView {
 
   func setdown() {
     for day in days {
-      NSNotificationCenter.defaultCenter().removeObserver(day)
+      NotificationCenter.default.removeObserver(day)
       day.removeFromSuperview()
     }
   }
@@ -50,8 +50,8 @@ class WeekView: UIView {
     var x: CGFloat = 0
     for i in 1...days.count {
       let day = days[i - 1]
-      day.frame = CGRectMake(x, 0, bounds.size.width / days.count, bounds.size.height)
-      x = CGRectGetMaxX(day.frame)
+      day.frame = CGRect(x: x, y: 0, width: bounds.size.width / days.count, height: bounds.size.height)
+      x = day.frame.maxX
     }
   }
 

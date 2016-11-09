@@ -28,7 +28,7 @@ class ContentView: UIScrollView {
   }
 
   func setup() {
-    pagingEnabled = true
+    isPagingEnabled = true
     showsHorizontalScrollIndicator = false
     showsVerticalScrollIndicator = false
 
@@ -42,7 +42,7 @@ class ContentView: UIScrollView {
     selectedDate = date
     var currentDate = date.subtract(1, .Months)
     for _ in 1...numMonthsLoaded {
-      let month = MonthView(frame: CGRectZero)
+      let month = MonthView(frame: CGRect.zero)
       month.date = currentDate
       addSubview(month)
       months.append(month)
@@ -54,13 +54,13 @@ class ContentView: UIScrollView {
     super.layoutSubviews()
     var x: CGFloat = 0
     for month in months {
-      month.frame = CGRectMake(x, 0, bounds.size.width, bounds.size.height)
-      x = CGRectGetMaxX(month.frame)
+      month.frame = CGRect(x: x, y: 0, width: bounds.size.width, height: bounds.size.height)
+      x = month.frame.maxX
     }
-    contentSize = CGSizeMake(bounds.size.width * numMonthsLoaded, bounds.size.height)
+    contentSize = CGSize(width: bounds.size.width * numMonthsLoaded, height: bounds.size.height)
   }
 
-  func selectPage(page: Int) {
+  func selectPage(_ page: Int) {
     var page1FrameMatched = false
     var page2FrameMatched = false
     var page3FrameMatched = false
@@ -69,9 +69,9 @@ class ContentView: UIScrollView {
     let pageWidth = frame.size.width
     let pageHeight = frame.size.height
 
-    let frameCurrent = CGRectMake(page * pageWidth, 0, pageWidth, pageHeight)
-    let frameLeft = CGRectMake((page-1) * pageWidth, 0, pageWidth, pageHeight)
-    let frameRight = CGRectMake((page+1) * pageWidth, 0, pageWidth, pageHeight)
+    let frameCurrent = CGRect(x: page * pageWidth, y: 0, width: pageWidth, height: pageHeight)
+    let frameLeft = CGRect(x: (page-1) * pageWidth, y: 0, width: pageWidth, height: pageHeight)
+    let frameRight = CGRect(x: (page+1) * pageWidth, y: 0, width: pageWidth, height: pageHeight)
 
     let page1 = months.first!
     let page2 = months[1]
@@ -108,20 +108,20 @@ class ContentView: UIScrollView {
         page3.frame = frameCurrent
         months = [page2, page3, page1]
       }
-      contentOffset.x = CGRectGetWidth(frame)
+      contentOffset.x = frame.width
       selectedDate = nil
       paged = true
     }
   }
 
-  func selectDate(date: Moment) {
+  func selectDate(_ date: Moment) {
     selectedDate = date
     setup()
-    selectVisibleDate(date.day)
+    _ = selectVisibleDate(date.day)
     setNeedsLayout()
   }
 
-  func selectVisibleDate(date: Int) -> DayView? {
+  func selectVisibleDate(_ date: Int) -> DayView? {
     let month = currentMonth()
     for week in month.weeks {
       for day in week.days {
@@ -138,7 +138,7 @@ class ContentView: UIScrollView {
     for month in months {
       for week in month.weeks {
         for day in week.days {
-          NSNotificationCenter.defaultCenter().removeObserver(day)
+          NotificationCenter.default.removeObserver(day)
         }
       }
     }
