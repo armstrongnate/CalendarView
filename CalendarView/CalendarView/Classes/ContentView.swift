@@ -2,8 +2,9 @@
 //  CalendarContentView.swift
 //  Calendar
 //
-//  Created by Nate Armstrong on 3/28/15.
+//  Created by Nate Armstrong on 3/29/15.
 //  Copyright (c) 2015 Nate Armstrong. All rights reserved.
+//  Updated to Swift 4 by A&D Progress aka verebes (c) 2018
 //
 
 import UIKit
@@ -54,13 +55,13 @@ class ContentView: UIScrollView {
     super.layoutSubviews()
     var x: CGFloat = 0
     for month in months {
-      month.frame = CGRect(x: x, y: 0, width: bounds.size.width, height: bounds.size.height)
+        month.frame = CGRect(x: x, y: 0, width: bounds.size.width, height: bounds.size.height)
       x = month.frame.maxX
     }
     contentSize = CGSize(width: bounds.size.width * numMonthsLoaded, height: bounds.size.height)
   }
 
-  func selectPage(_ page: Int) {
+  func selectPage(page: Int) {
     var page1FrameMatched = false
     var page2FrameMatched = false
     var page3FrameMatched = false
@@ -114,14 +115,14 @@ class ContentView: UIScrollView {
     }
   }
 
-  func selectDate(_ date: Moment) {
+  func selectDate(date: Moment) {
     selectedDate = date
     setup()
-    _ = selectVisibleDate(date.day)
+    selectVisibleDate(date: date.day)
     setNeedsLayout()
   }
 
-  func selectVisibleDate(_ date: Int) -> DayView? {
+  func selectVisibleDate(date: Int) -> DayView? {
     let month = currentMonth()
     for week in month.weeks {
       for day in week.days {

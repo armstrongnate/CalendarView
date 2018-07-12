@@ -1,7 +1,9 @@
 // EasyCast.swift
 // 
 // Copyright (c) 2014 Jameson Quave
-// 
+//
+// Updated to Swift 4 by A&D Progress aka verebes (c) 2018
+//
 // Permission is hereby granted, free of charge, to any person obtaining a copy
 // of this software and associated documentation files (the "Software"), to deal
 // in the Software without restriction, including without limitation the rights
@@ -145,76 +147,76 @@ func %(lhs: Double, rhs: CGFloat) -> CGFloat {
     return CGFloat(lhs).truncatingRemainder(dividingBy: CGFloat(rhs))
 }
 
-func min(_ x: Int, y: Float) -> Float {
+func min(x: Int, y: Float) -> Float {
     return min(Float(x), Float(y))
 }
-func max(_ x: Int, y: Float) -> Float {
+func max(x: Int, y: Float) -> Float {
     return min(Float(x), Float(y))
 }
-func min(_ x: Int, y: CGFloat) -> CGFloat {
+func min(x: Int, y: CGFloat) -> CGFloat {
     return min(CGFloat(x), CGFloat(y))
 }
-func max(_ x: Int, y: CGFloat) -> CGFloat {
+func max(x: Int, y: CGFloat) -> CGFloat {
     return min(CGFloat(x), CGFloat(y))
 }
-func min(_ x: Int, y: Double) -> Double {
+func min(x: Int, y: Double) -> Double {
     return min(Double(x), Double(y))
 }
-func max(_ x: Int, y: Double) -> Double {
+func max(x: Int, y: Double) -> Double {
     return min(Double(x), Double(y))
 }
-func min(_ x: Float, y: Int) -> Float {
+func min(x: Float, y: Int) -> Float {
     return min(Float(x), Float(y))
 }
-func max(_ x: Float, y: Int) -> Float {
+func max(x: Float, y: Int) -> Float {
     return min(Float(x), Float(y))
 }
-func min(_ x: Float, y: CGFloat) -> CGFloat {
+func min(x: Float, y: CGFloat) -> CGFloat {
     return min(CGFloat(x), CGFloat(y))
 }
-func max(_ x: Float, y: CGFloat) -> CGFloat {
+func max(x: Float, y: CGFloat) -> CGFloat {
     return min(CGFloat(x), CGFloat(y))
 }
-func min(_ x: Float, y: Double) -> Double {
+func min(x: Float, y: Double) -> Double {
     return min(Double(x), Double(y))
 }
-func max(_ x: Float, y: Double) -> Double {
+func max(x: Float, y: Double) -> Double {
     return min(Double(x), Double(y))
 }
-func min(_ x: CGFloat, y: Int) -> CGFloat {
+func min(x: CGFloat, y: Int) -> CGFloat {
     return min(CGFloat(x), CGFloat(y))
 }
-func max(_ x: CGFloat, y: Int) -> CGFloat {
+func max(x: CGFloat, y: Int) -> CGFloat {
     return min(CGFloat(x), CGFloat(y))
 }
-func min(_ x: CGFloat, y: Float) -> CGFloat {
+func min(x: CGFloat, y: Float) -> CGFloat {
     return min(CGFloat(x), CGFloat(y))
 }
-func max(_ x: CGFloat, y: Float) -> CGFloat {
+func max(x: CGFloat, y: Float) -> CGFloat {
     return min(CGFloat(x), CGFloat(y))
 }
-func min(_ x: CGFloat, y: Double) -> CGFloat {
+func min(x: CGFloat, y: Double) -> CGFloat {
     return min(CGFloat(x), CGFloat(y))
 }
-func max(_ x: CGFloat, y: Double) -> CGFloat {
+func max(x: CGFloat, y: Double) -> CGFloat {
     return min(CGFloat(x), CGFloat(y))
 }
-func min(_ x: Double, y: Int) -> Double {
+func min(x: Double, y: Int) -> Double {
     return min(Double(x), Double(y))
 }
-func max(_ x: Double, y: Int) -> Double {
+func max(x: Double, y: Int) -> Double {
     return min(Double(x), Double(y))
 }
-func min(_ x: Double, y: Float) -> Double {
+func min(x: Double, y: Float) -> Double {
     return min(Double(x), Double(y))
 }
-func max(_ x: Double, y: Float) -> Double {
+func max(x: Double, y: Float) -> Double {
     return min(Double(x), Double(y))
 }
-func min(_ x: Double, y: CGFloat) -> CGFloat {
+func min(x: Double, y: CGFloat) -> CGFloat {
     return min(CGFloat(x), CGFloat(y))
 }
-func max(_ x: Double, y: CGFloat) -> CGFloat {
+func max(x: Double, y: CGFloat) -> CGFloat {
     return min(CGFloat(x), CGFloat(y))
 }
 
