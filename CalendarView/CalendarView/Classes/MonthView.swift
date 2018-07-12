@@ -2,8 +2,9 @@
 //  MonthView.swift
 //  Calendar
 //
-//  Created by Nate Armstrong on 3/28/15.
+//  Created by Nate Armstrong on 3/29/15.
 //  Copyright (c) 2015 Nate Armstrong. All rights reserved.
+//  Updated to Swift 4 by A&D Progress aka verebes (c) 2018
 //
 
 import UIKit
@@ -73,13 +74,13 @@ class MonthView: UIView {
     let labelHeight: CGFloat = 18
     let inset: CGFloat = 10
     for label in weekLabels {
-      label.frame = CGRect(x: x, y: inset, width: bounds.size.width / 7, height: labelHeight)
+        label.frame = CGRect(x: x, y: inset, width: bounds.size.width / 7, height: labelHeight)
       x = label.frame.maxX
     }
     var y: CGFloat = labelHeight + inset
     for i in 1...weeks.count {
       let week = weeks[i - 1]
-      week.frame = CGRect(x: 0, y: y, width: bounds.size.width, height: (bounds.size.height - (labelHeight + inset) - inset) / maxNumWeeks)
+        week.frame = CGRect(x: 0, y: y, width: bounds.size.width, height: (bounds.size.height - (labelHeight + inset) - inset) / maxNumWeeks)
       y = week.frame.maxY
     }
   }
