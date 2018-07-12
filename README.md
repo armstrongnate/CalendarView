@@ -11,8 +11,8 @@ To run the example project, clone the repo, and run `pod install` from the Calen
 
 ## Requirements
 
-* iOS 8.3+
-* Xcode 6.3
+* iOS 9.0+
+* Xcode 9.0
 
 ## Installation
 
@@ -35,7 +35,7 @@ pod "CalendarView"
 Use the `CalendarView` class in code:
 
 ```swift
-let calendar = CalendarView(frame: CGRectMake(0, 0, CGRectGetWidth(view.frame), 320))
+let calendar = CalendarView(frame: CGRect(x: 0, y: 0, width: view.frame.width, height: 320))
 view.addSubview(calendar)
 ```
 
@@ -51,7 +51,7 @@ The selected date is the current date by default. You can select any date by usi
 the `selectDate(date: Moment)` method.
 
 ```swift
-let date: NSDate = MY_NSDATE
+let date: Date = YOUR_DATE_HERE
 calendar.selectDate(moment(date))
 ```
 
@@ -105,14 +105,14 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
   func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
     // Calendar appearance
-    CalendarView.daySelectedBackgroundColor = UIColor.secondaryColor()
-    CalendarView.daySelectedTextColor = UIColor.whiteColor()
+    CalendarView.daySelectedBackgroundColor = UIColor.orange
+    CalendarView.daySelectedTextColor = UIColor.white
     CalendarView.todayBackgroundColor = UIColor(white: 0.0, alpha: 0.3)
-    CalendarView.todayTextColor = UIColor.whiteColor()
-    CalendarView.otherMonthBackgroundColor = UIColor.clearColor()
+    CalendarView.todayTextColor = UIColor.white
+    CalendarView.otherMonthBackgroundColor = UIColor.clear
     CalendarView.otherMonthTextColor = UIColor(white: 1.0, alpha: 0.3)
     CalendarView.dayTextColor = UIColor(white: 1.0, alpha: 0.6)
-    CalendarView.dayBackgroundColor = UIColor.clearColor()
+    CalendarView.dayBackgroundColor = UIColor.clear
     CalendarView.weekLabelTextColor = UIColor(white: 1.0, alpha: 0.3)
 
     return true
@@ -135,6 +135,10 @@ If set to `nil`, no day will be automatically selected on swipe.
 ## Author
 
 Nate Armstrong, natearmstrong2@gmail.com
+
+## Update to Swift 4
+
+A&D Progress aka verebes, info@adprogress.co.uk
 
 ## License
 
