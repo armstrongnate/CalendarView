@@ -10,14 +10,14 @@
 		1D91F8C61BCC1F4C0040FF1B /* CalendarView.h in Headers */ = {isa = PBXBuildFile; fileRef = 1D91F8C51BCC1F4C0040FF1B /* CalendarView.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		1D91F8CD1BCC1F4C0040FF1B /* CalendarView.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D91F8C21BCC1F4C0040FF1B /* CalendarView.framework */; };
 		1D91F8D21BCC1F4C0040FF1B /* CalendarViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D91F8D11BCC1F4C0040FF1B /* CalendarViewTests.swift */; };
-		1D91F8E51BCC1F5F0040FF1B /* CalendarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D91F8DE1BCC1F5F0040FF1B /* CalendarView.swift */; };
-		1D91F8E61BCC1F5F0040FF1B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D91F8DF1BCC1F5F0040FF1B /* ContentView.swift */; };
-		1D91F8E71BCC1F5F0040FF1B /* DayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D91F8E01BCC1F5F0040FF1B /* DayView.swift */; };
-		1D91F8E81BCC1F5F0040FF1B /* EasyCast.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D91F8E11BCC1F5F0040FF1B /* EasyCast.swift */; };
-		1D91F8E91BCC1F5F0040FF1B /* MonthView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D91F8E21BCC1F5F0040FF1B /* MonthView.swift */; };
-		1D91F8EA1BCC1F5F0040FF1B /* WeekView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D91F8E31BCC1F5F0040FF1B /* WeekView.swift */; };
 		1D91F8EC1BCC200C0040FF1B /* SwiftMoment.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D91F8EB1BCC200C0040FF1B /* SwiftMoment.framework */; };
 		1DAA13C11BCC406600A2A5B0 /* SwiftMoment.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D91F8EB1BCC200C0040FF1B /* SwiftMoment.framework */; };
+		4FC50FFE20F76A7E00C35330 /* CalendarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FC50FF820F76A7D00C35330 /* CalendarView.swift */; };
+		4FC50FFF20F76A7E00C35330 /* DayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FC50FF920F76A7E00C35330 /* DayView.swift */; };
+		4FC5100020F76A7E00C35330 /* EasyCast.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FC50FFA20F76A7E00C35330 /* EasyCast.swift */; };
+		4FC5100120F76A7E00C35330 /* MonthView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FC50FFB20F76A7E00C35330 /* MonthView.swift */; };
+		4FC5100220F76A7E00C35330 /* WeekView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FC50FFC20F76A7E00C35330 /* WeekView.swift */; };
+		4FC5100320F76A7E00C35330 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FC50FFD20F76A7E00C35330 /* ContentView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,13 +37,13 @@
 		1D91F8CC1BCC1F4C0040FF1B /* CalendarViewTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CalendarViewTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1D91F8D11BCC1F4C0040FF1B /* CalendarViewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarViewTests.swift; sourceTree = "<group>"; };
 		1D91F8D31BCC1F4C0040FF1B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		1D91F8DE1BCC1F5F0040FF1B /* CalendarView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalendarView.swift; sourceTree = "<group>"; };
-		1D91F8DF1BCC1F5F0040FF1B /* ContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		1D91F8E01BCC1F5F0040FF1B /* DayView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DayView.swift; sourceTree = "<group>"; };
-		1D91F8E11BCC1F5F0040FF1B /* EasyCast.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EasyCast.swift; sourceTree = "<group>"; };
-		1D91F8E21BCC1F5F0040FF1B /* MonthView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MonthView.swift; sourceTree = "<group>"; };
-		1D91F8E31BCC1F5F0040FF1B /* WeekView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeekView.swift; sourceTree = "<group>"; };
 		1D91F8EB1BCC200C0040FF1B /* SwiftMoment.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftMoment.framework; path = Carthage/Build/iOS/SwiftMoment.framework; sourceTree = "<group>"; };
+		4FC50FF820F76A7D00C35330 /* CalendarView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalendarView.swift; sourceTree = "<group>"; };
+		4FC50FF920F76A7E00C35330 /* DayView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DayView.swift; sourceTree = "<group>"; };
+		4FC50FFA20F76A7E00C35330 /* EasyCast.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EasyCast.swift; sourceTree = "<group>"; };
+		4FC50FFB20F76A7E00C35330 /* MonthView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MonthView.swift; sourceTree = "<group>"; };
+		4FC50FFC20F76A7E00C35330 /* WeekView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeekView.swift; sourceTree = "<group>"; };
+		4FC50FFD20F76A7E00C35330 /* ContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,12 +108,12 @@
 		1D91F8DC1BCC1F5F0040FF1B /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				1D91F8DE1BCC1F5F0040FF1B /* CalendarView.swift */,
-				1D91F8DF1BCC1F5F0040FF1B /* ContentView.swift */,
-				1D91F8E01BCC1F5F0040FF1B /* DayView.swift */,
-				1D91F8E11BCC1F5F0040FF1B /* EasyCast.swift */,
-				1D91F8E21BCC1F5F0040FF1B /* MonthView.swift */,
-				1D91F8E31BCC1F5F0040FF1B /* WeekView.swift */,
+				4FC50FF820F76A7D00C35330 /* CalendarView.swift */,
+				4FC50FFD20F76A7E00C35330 /* ContentView.swift */,
+				4FC50FF920F76A7E00C35330 /* DayView.swift */,
+				4FC50FFA20F76A7E00C35330 /* EasyCast.swift */,
+				4FC50FFB20F76A7E00C35330 /* MonthView.swift */,
+				4FC50FFC20F76A7E00C35330 /* WeekView.swift */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -190,7 +190,7 @@
 				TargetAttributes = {
 					1D91F8C11BCC1F4C0040FF1B = {
 						CreatedOnToolsVersion = 7.0;
-						LastSwiftMigration = 0800;
+						LastSwiftMigration = 0940;
 					};
 					1D91F8CB1BCC1F4C0040FF1B = {
 						CreatedOnToolsVersion = 7.0;
@@ -271,12 +271,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1D91F8EA1BCC1F5F0040FF1B /* WeekView.swift in Sources */,
-				1D91F8E61BCC1F5F0040FF1B /* ContentView.swift in Sources */,
-				1D91F8E91BCC1F5F0040FF1B /* MonthView.swift in Sources */,
-				1D91F8E71BCC1F5F0040FF1B /* DayView.swift in Sources */,
-				1D91F8E81BCC1F5F0040FF1B /* EasyCast.swift in Sources */,
-				1D91F8E51BCC1F5F0040FF1B /* CalendarView.swift in Sources */,
+				4FC5100020F76A7E00C35330 /* EasyCast.swift in Sources */,
+				4FC5100220F76A7E00C35330 /* WeekView.swift in Sources */,
+				4FC5100320F76A7E00C35330 /* ContentView.swift in Sources */,
+				4FC50FFE20F76A7E00C35330 /* CalendarView.swift in Sources */,
+				4FC50FFF20F76A7E00C35330 /* DayView.swift in Sources */,
+				4FC5100120F76A7E00C35330 /* MonthView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -391,6 +391,7 @@
 		1D91F8D71BCC1F4C0040FF1B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = "";
@@ -407,6 +408,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.armstrongnate.CalendarView;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -414,6 +416,7 @@
 		1D91F8D81BCC1F4C0040FF1B /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = "";
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -436,6 +439,7 @@
 		1D91F8DA1BCC1F4C0040FF1B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				DEVELOPMENT_TEAM = "";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -452,6 +456,7 @@
 		1D91F8DB1BCC1F4C0040FF1B /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				DEVELOPMENT_TEAM = "";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
